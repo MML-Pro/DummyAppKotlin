@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DummyAppKotlin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/statusBarColor</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/contextualActionBarColor</item>
+
+
+    </style>
+
+<!--    <style name="Theme.DummyApp.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+
+<!--        <item name="colorPrimary">@color/primaryColor</item>-->
+<!--        <item name="colorPrimaryDark">@color/primaryDarkColor</item>-->
+
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+
+<!--        <item name="android:textColor">@color/white</item>-->
+
+<!--        <item name="android:itemBackground">@color/darkGray</item>-->
+
+<!--    </style>-->
+
+    <style name="EmptyViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="background">@color/primaryColor</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/primaryColor</item>
+
+        <item name="background">@color/white</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/mediumGray</item>
+
+    </style>
+
+
+    <!--    <style name="CustomNavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">-->
+    <!--        <item name="itemIconTint">@color/navigation_view_item_color</item>-->
+    <!--        <item name="itemTextColor">@color/navigation_view_item_color</item>-->
+    <!--    </style>-->
+
+
+    <style name="progressBarBlue" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/secondaryColor</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+    <style name="PostTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PostBody">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/descriptionColor</item>
+    </style>
+
+</resources>

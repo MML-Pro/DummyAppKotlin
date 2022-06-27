@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mml.dummyapp_kotlin.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_accessory"
+        android:name="com.mml.dummyapp_kotlin.ui.AccessoryFragment"
+        android:label="@string/accessory"
+        tools:layout="@layout/fragment_accessory" />
+
+    <fragment
+        android:id="@+id/nav_arcade"
+        android:name="com.mml.dummyapp_kotlin.ui.ArcadeFragment"
+        android:label="@string/arcade"
+        tools:layout="@layout/fragment_arcade" />
+
+    <fragment
+        android:id="@+id/nav_fashion"
+        android:name="com.mml.dummyapp_kotlin.ui.FashionFragment"
+        android:label="@string/fashion"
+        tools:layout="@layout/fragment_fashion" />
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.mml.dummyapp_kotlin.ui.FoodFragment"
+        android:label="@string/food"
+        tools:layout="@layout/food_fragment" />
+    <fragment
+        android:id="@+id/nav_heath"
+        android:name="com.mml.dummyapp_kotlin.ui.HeathFragment"
+        android:label="@string/heath"
+        tools:layout="@layout/heath_fragment" />
+    <fragment
+        android:id="@+id/nav_lifestyle"
+        android:name="com.mml.dummyapp_kotlin.ui.LifestyleFragment"
+        android:label="@string/lifestyle"
+        tools:layout="@layout/lifestyle_fragment" />
+    <fragment
+        android:id="@+id/nav_sports"
+        android:name="com.mml.dummyapp_kotlin.ui.SportsFragment"
+        android:label="@string/sports"
+        tools:layout="@layout/sports_fragment"/>
+    <dialog
+        android:id="@+id/about"
+        android:name="com.mml.dummyapp_kotlin.ui.AboutFragment"
+        android:label="about"
+        tools:layout="@layout/about" />
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.mml.dummyapp_kotlin.ui.FavoritesFragment"
+        android:label="Favorites posts"
+        tools:layout="@layout/fragment_favorites"/>
+</navigation>

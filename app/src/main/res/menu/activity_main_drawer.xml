@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/home"
+            />
+
+        <item
+            android:id="@+id/nav_accessory"
+            android:title="@string/accessory"
+            android:icon="@drawable/necklace"
+            />
+        <item
+            android:id="@+id/nav_arcade"
+            android:title="@string/arcade"
+            android:icon="@drawable/arcade_cabinet"
+            />
+        <item
+            android:id="@+id/nav_fashion"
+            android:title="@string/fashion"
+            android:icon="@drawable/fashion_trend"
+            />
+        <item
+            android:id="@+id/nav_food"
+            android:title="@string/food"
+            android:icon="@drawable/hamburger"
+            />
+        <item
+            android:id="@+id/nav_heath"
+            android:title="@string/heath"
+            android:icon="@drawable/clinic"
+            />
+        <item
+            android:id="@+id/nav_lifestyle"
+            android:title="@string/lifestyle"
+            android:icon="@drawable/yoga"
+            />
+        <item
+            android:id="@+id/nav_sports"
+            android:title="@string/sports"
+            android:icon="@drawable/soccer"
+            />
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:title="@string/favorites_posts"
+            android:icon="@drawable/ic_favorite"
+            />
+
+        <item
+            android:id="@+id/about"
+            android:title="@string/about"
+            android:icon="@drawable/about"
+            />
+
+    </group>
+
+</menu>

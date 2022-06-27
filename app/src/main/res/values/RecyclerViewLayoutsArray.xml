@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="RecyclerViewLayouts">
+        <item>Card List</item>
+        <item>Card Magazine</item>
+        <item>Title</item>
+        <item>Grid</item>
+    </array>
+</resources>

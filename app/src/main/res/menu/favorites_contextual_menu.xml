@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_favorites_post"
+        android:title="@string/delete_post"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/white"
+        android:icon="@drawable/ic_delete"
+        >
+
+    </item>
+
+</menu>

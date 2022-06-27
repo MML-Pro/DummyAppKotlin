@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context="com.mml.dummyapp_kotlin.ui.HomeFragment">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_auto_start="true"
+        app:shimmer_repeat_mode="restart"
+        app:shimmer_shape="radial"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/placeholder_row" />
+
+            <include layout="@layout/placeholder_row" />
+
+            <include layout="@layout/placeholder_row" />
+
+            <include layout="@layout/placeholder_row" />
+
+            <include layout="@layout/placeholder_row" />
+
+            <include layout="@layout/placeholder_row" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layoutManager=".util.WrapContentLinearLayoutManager" />
+
+
+    <Button
+        android:id="@+id/loadMoreBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="0.02"
+        android:text="Load More"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@color/buttonColor"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/emptyView"
+        style="@style/EmptyViewStyle"
+        android:text="@string/no_data_available"
+        android:visibility="gone"
+        tools:text="@string/no_data_available"
+        tools:visibility="gone" />
+
+
+</LinearLayout>

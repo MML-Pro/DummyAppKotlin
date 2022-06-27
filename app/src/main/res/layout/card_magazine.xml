@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp">
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/postTitle"
+            tools:text="This is the post title,
+you can check bla bla bla bla bla lkjdflkjhnfldkjhnflkjhnlfkjnglkjnlkjkln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="start"
+            tools:text="3 weeks ago"
+            android:textSize="@dimen/_14ssp"
+
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
